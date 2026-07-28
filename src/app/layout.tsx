@@ -174,6 +174,7 @@ const jsonLd = {
 };
 
 import ErrorBoundary from '@/components/ErrorBoundary';
+import AppSwitcher from '@/components/AppSwitcher';
 
 export default function RootLayout({
   children,
@@ -199,6 +200,7 @@ export default function RootLayout({
 
       </head>
       <body className="antialiased">
+        <AppSwitcher />
         <ErrorBoundary name="OSIRIS Core">
           {children}
         </ErrorBoundary>
